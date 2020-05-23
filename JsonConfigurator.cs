@@ -23,7 +23,7 @@ namespace MongoDBConnector
 
                 return new JsonConfigurator
                 {
-                    ConnectionString = (string)obj["connectionStringLocal"],
+                    ConnectionString = (string)obj["connectionString"],
                     DatabaseName = (string)obj["databaseName"]
                 };
             }

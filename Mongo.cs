@@ -86,6 +86,12 @@ namespace MongoDBConnector
             return collection.FindAsync(filter).Result.Any();
         }
 
+        public static bool Exists<T>(FilterDefinition<T> filter) where T : Entity
+        {
+            var collection = Db.GetCollection<T>(typeof(T).Name.NormalizeCollectionName());
+            return collection.FindAsync(filter).Result.Any();
+        }
+
         public static bool InsertOne<T>(T entity) where T : Entity
         {
             try
