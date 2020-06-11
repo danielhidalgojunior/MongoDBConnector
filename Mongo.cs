@@ -102,7 +102,7 @@ namespace MongoDBConnector
 
                 return true;
             }
-            catch (Exception)
+            catch (Exception ex)
             {
                 return false;
             }

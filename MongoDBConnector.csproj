@@ -80,6 +80,7 @@
     <Compile Include="Base\Entity.cs" />
     <Compile Include="Extensions\StringExtensions.cs" />
     <Compile Include="Interfaces\IModifiable.cs" />
+    <Compile Include="Interfaces\IMongoPersist.cs" />
     <Compile Include="Interfaces\IReadable.cs" />
     <Compile Include="JsonConfigurator.cs" />
     <Compile Include="Mongo.cs" />
